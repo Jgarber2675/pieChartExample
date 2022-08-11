@@ -10,4 +10,15 @@ export interface PieProps {
         label: string
         value: number
     }[]
+    colorStart?: string
+    colorEnd?: string
+}
+export interface ChoroplethProps {
+    data?: {
+        name?: string,
+        code?: string,
+        pop?: number
+    }[],
+    width?: number,
+    height?: number
 }
